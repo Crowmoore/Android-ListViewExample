@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
             list.add(phones[i]);
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.rowlayout, R.id.textView, list);
+        PhoneArrayAdapter adapter = new PhoneArrayAdapter(this, list);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.rowlayout, R.id.textView, list);
 
         listView.setAdapter(adapter);
     }
